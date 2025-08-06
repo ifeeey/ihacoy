@@ -13,7 +13,7 @@ def pindah_button(button):
     button.place(x=new_x, y=new_y)
 
 def tekan_ya():
-    messagebox.showinfo("Jawaban", "WOHOOOO Now you are my partner!!!")
+    messagebox.showinfo("Jawaban", "Now you are my partner")
     buka_whatsapp()
 
 def tekan_tidak():
@@ -21,12 +21,12 @@ def tekan_tidak():
 
 def buka_whatsapp():
     encoded_message = urllib.parse.quote(pesan)
-    webbrowser.open_new(f"https://api.whatsapp.com/send?phone=6287828801134&text=hai ian cantik")
+    webbrowser.open_new(f"https://api.whatsapp.com/send?phone=6287828801134&text=hai ian cantik, ak jg suka km")
 
 window = tk.Tk()
 window.title("Aku Suka Kamu")
 window.geometry("400x600")
-window.configure(bg='#FFC0CB')
+window.configure(bg='#FFC0CB')  
 
 frame = tk.Frame(window, bg='#FFC0CB', bd=5)
 frame.place(relx=0.5, rely=0.5, anchor='center')
